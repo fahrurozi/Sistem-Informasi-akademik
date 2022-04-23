@@ -1,0 +1,78 @@
+<body>
+
+<div class="row">
+                    <div class="col-sm-12">
+                        <!-- start: TEXT FIELDS PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-external-link-square"></i> Tambah
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- FORM -->
+                            <div class="panel-body">
+                                <?php
+                                    echo form_open('tahun_ajaran/add', 'role="form" class="form-horizontal"');
+                                ?>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="form-field-1">
+                                            Tahun Ajaran
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="tahun" placeholder="Text Field" id="form-field-1" class="form-control" title="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class ="col-sm-2 control-label" for="form-field-select-1">
+                                            Apakah Aktif?
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <?php 
+                                            echo form_dropdown('is_aktif', array('y'=>'AKTIF', 'n'=>'TIDAK'), null, "class='form-control'");
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class ="col-sm-2 control-label" for="form-field-select-1">
+                                            Semester
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <?php 
+                                            echo form_dropdown('semester_aktif', array('1'=>'GANJIL', '2'=>'GENAP'), null, "class='form-control'");
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class ="col-sm-2 control-label" for="form-field-select-1"></label>
+                                        <div class="col-sm-1">
+                                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <?php echo anchor('tahun_ajaran','Kembali', array("class" => "btn btn-default")); ?>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                            <!-- FORM -->
+
+                        </div>
+                        <!-- end: TEXT FIELDS PANEL -->
+                    </div>
+</div>
+</body>
