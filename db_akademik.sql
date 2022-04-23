@@ -530,7 +530,7 @@ CREATE TABLE `tb_user` (
 
 LOCK TABLES `tb_user` WRITE;
 /*!40000 ALTER TABLE `tb_user` DISABLE KEYS */;
-INSERT INTO `tb_user` VALUES (1,'admin','admin','e10adc3949ba59abbe56e057f20f883e',1,'yellow6.png'),(16,'siswa','siswa','d41d8cd98f00b204e9800998ecf8427e',1,'yellow2.png'),(33,'siswauser','siswauser','e10adc3949ba59abbe56e057f20f883e',1,'yellow3.png'),(34,'user','user1','5cc32e366c87c4cb49e4309b75f57d64',1,'yellow4.png'),(37,'tessiswa','tessiswa','e10adc3949ba59abbe56e057f20f883e',1,'yellow5.png'),(40,'testing','test','e10adc3949ba59abbe56e057f20f883e',1,'yellow1.png');
+INSERT INTO `tb_user` VALUES (1,'admin','admin','e10adc3949ba59abbe56e057f20f883e',1,'yellow6.png'),(16,'siswa','siswa','e10adc3949ba59abbe56e057f20f883e',1,'yellow2.png'),(33,'siswauser','siswauser','e10adc3949ba59abbe56e057f20f883e',1,'yellow3.png'),(34,'user','user1','e10adc3949ba59abbe56e057f20f883e',1,'yellow4.png'),(37,'tessiswa','tessiswa','e10adc3949ba59abbe56e057f20f883e',1,'yellow5.png'),(40,'testing','test','e10adc3949ba59abbe56e057f20f883e',1,'yellow1.png');
 /*!40000 ALTER TABLE `tb_user` ENABLE KEYS */;
 UNLOCK TABLES;
 

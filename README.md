@@ -1,0 +1,1 @@
+all user password = 123456
